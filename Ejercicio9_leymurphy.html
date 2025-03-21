@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #C0C0C0;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .titulo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .contenedor {
+            position: relative;
+            width: 90%;
+            margin: auto;
+            height: 600px;
+        }
+        .caja {
+            position: absolute;
+            padding: 40px;
+            font-size: 22px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .caja:hover {
+            transform: scale(1.2);
+            z-index: 10;
+        }
+        .caja1 {
+            background-color: #F4C17B;
+            width: 80%;
+            top: 20px;
+            left: 10%;
+        }
+        .caja2 {
+            background-color: #FFFF99;
+            width: 60%;
+            top: 150px;
+            left: 5%;
+        }
+        .caja3 {
+            background-color: #ADD8E6;
+            width: 60%;
+            top: 150px;
+            right: 5%;
+        }
+        .caja4 {
+            background-color: #98FB98;
+            width: 60%;
+            top: 320px;
+            left: 20%;
+        }
+        .caja5 {
+            background-color: #FFB6C1;
+            width: 70%;
+            bottom: 50px;
+            left: 5%;
+        }
+        .caja6 {
+            background-color: #FF9999;
+            width: 70%;
+            bottom: 50px;
+            right: 5%;
+        }
+    </style>
+</head>
+<body>
+    <div class="titulo">Leyes de Murphy</div>
+    <div class="contenedor">
+        <div class="caja caja1">Cualquier cosa que pueda ir mal, ... irá mal.</div>
+        <div class="caja caja2">Si sabes que una cosa puede ir mal y tomas todas las precauciones, irá mal otra cosa.</div>
+        <div class="caja caja3">No hay nada que vaya tan mal que no pueda ir peor.</div>
+        <div class="caja caja4">Todo aquello que comienza bien, acaba mal. Todo aquello que comienza mal, acaba peor.</div>
+        <div class="caja caja5">Todo va mal a la vez.</div>
+        <div class="caja caja6">Murphy era un optimista</div>
+    </div>
+</body>
+</html>

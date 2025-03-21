@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Web Adaptativa</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background: #555;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .main-content {
+            flex: 2;
+            background: #ddd;
+            padding: 20px;
+            min-height: 300px;
+        }
+        .sidebar {
+            flex: 1;
+            background: #bbb;
+            padding: 20px;
+            min-height: 300px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .main-content, .sidebar {
+                flex: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi Página Web Adaptativa</h1>
+    </header>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Servicios</a>
+        <a href="#">Contacto</a>
+    </nav>
+    <div class="container">
+        <div class="main-content">
+            <h2>Bienvenido a Mi Web</h2>
+            <p>Esta es una página web de ejemplo que se adapta a diferentes tamaños de pantalla usando flexbox y media queries.</p>
+        </div>
+        <div class="sidebar">
+            <h2>Noticias</h2>
+            <p>Aquí encontrarás las últimas noticias sobre nuestros servicios y novedades.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Mi Web Adaptativa. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

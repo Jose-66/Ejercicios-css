@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Contenedor del menú */
+.horizontal-menu {
+  display: flex; /* Alinea los elementos en una fila */
+  background-color: #444; /* Fondo gris oscuro */
+  padding: 0;
+  margin: 0;
+  list-style: none; /* Quita los estilos de lista */
+}
+
+/* Estilos de los enlaces */
+.horizontal-menu a {
+  color: white; /* Texto blanco */
+  padding: 14px 20px; /* Espaciado interno */
+  text-decoration: none; /* Quita el subrayado */
+  display: block;
+  transition: background 0.3s; /* Transición suave */
+}
+
+/* Cambios al pasar el ratón */
+.horizontal-menu a:hover {
+  background-color: #333; /* Fondo más oscuro */
+}
+
+/* Elemento activo */
+.horizontal-menu a.active {
+  background-color: #04AA6D; /* Verde */
+}
+</style>
+</head>
+<body>
+
+<h1>Horizontal Menu</h1>
+
+<ul class="horizontal-menu">
+  <li><a href="#" class="active">Home</a></li>
+  <li><a href="#">Link 1</a></li>
+  <li><a href="#">Link 2</a></li>
+  <li><a href="#">Link 3</a></li>
+  <li><a href="#">Link 4</a></li>
+</ul>
+
+</body>
+</html>
